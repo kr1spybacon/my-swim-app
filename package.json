@@ -1,0 +1,11 @@
+{
+  "name": "swim-data-app",
+  "version": "1.0.0",
+  "description": "An app to store and display users' swimming data and metrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuanji Huang",
+  "license": "ISC"
+}
