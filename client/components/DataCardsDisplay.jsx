@@ -1,7 +1,7 @@
 import React from 'react';
 import DataCard from './DataCard.jsx';
 
-const DataCardDisplay = props => {
+const DataCardsDisplay = props => {
   const cards = [];
   for (let i = 0; i < 3; i ++) {
     cards.push(

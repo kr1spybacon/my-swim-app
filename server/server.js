@@ -11,14 +11,18 @@ app.use(express.urlencoded({ extended: true }));
 
 // app.use(express.static(path.resolve(__dirname, '../client')));
 
+// statically serve everything in the build folder on the route '/public'
+app.use('/dist', express.static(path.join(__dirname, '../dist')));
+
+// serve index.html on the route '/'
 app.get('/', (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, '../client/index.html'));
+  return res.status(200).sendFile(path.join(__dirname, '../index.html'));
 });
 
-app.use('/api', (req, res) => {
-  res.json('Hello from server');
-});
 
+// app.use('/api', (req, res) => {
+//   res.json('Hello from server');
+// });
 
 
 // ---------------------------------------------------------------------------
